@@ -19,6 +19,6 @@ jobs:
     - name: find
       run: ls -la && pwd
     - name: Build
-      run: cargo build --verbose "Cargo.toml"
+      run: cargo build NoTP/NoTP/Cargo.toml
     - name: Run tests
-      run: cargo test --verbose
+      run: cargo test NoTP/NoTP/Cargo.toml
