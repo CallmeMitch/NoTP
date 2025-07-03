@@ -16,7 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: find
+      run: ls -la && pwd
     - name: Build
-      run: cargo build --verbose
+      run: cargo build --verbose "Cargo.toml"
     - name: Run tests
       run: cargo test --verbose
