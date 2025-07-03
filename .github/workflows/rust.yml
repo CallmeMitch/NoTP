@@ -19,6 +19,6 @@ jobs:
     - name: find
       run: ls -la && pwd
     - name: Build
-      run: cargo build --manifest-path NoTP/NoTP/Cargo.toml
+      run: cargo build --manifest-path Cargo.toml
     - name: Run tests
-      run: cargo test --manifest-path NoTP/NoTP/Cargo.toml
+      run: cargo test --manifest-path Cargo.toml
